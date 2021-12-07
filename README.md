@@ -1,6 +1,6 @@
 # PEMS
 
-**How to run PEMS:** 
+**How to run PEMS with RStudio:** 
 
 **Step 1: Download app folder of the version you want**
 PEMS app have one version for MacOS system and one version for linux system.
@@ -21,3 +21,27 @@ If you would like to calculate UMI for your single sample run, you need to insta
 
 **Step 4: Run PEMS**
 Now you can run PEMS using the PEMS interface for single sample run, multi-sample run, differential expression analysis and power estimation.
+
+
+
+**How to run PEMS with R command line:** 
+
+**Step 1: Download app folder of the version you want**
+PEMS app have one version for MacOS system and one version for linux system.
+
+**Step 2: Use R command line**
+
+
+
+
+
+
+
+
+**How to run PEMS with command line in linux:** 
+If you would like to run PEMS use linux command line, go to PEMS_command_version folder and use the .sh file there to run PEMS.
+
+
+
+
+
