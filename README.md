@@ -15,5 +15,9 @@ Download RStudio in your computer first. Go to app folder you downloaded and dou
 **Step 3: Download required R packages and tools for analysis**
 Once you click Run App butten, it will automatically install the R packages that you don't have for you. All required tools are downloaded under the app folder. You don't need to download them. 
 
-If you would like to calculate UMI for your one sample run, you need to install UMI-tools (see download instruction here: https://umi-tools.readthedocs.io/en/latest/QUICK_START.html#step-1-install-umi-tools. You can download it by entering system("conda install -c bioconda umi_tools") or system("pip install umi_tools") in R Console in R studio. 
+If you would like to calculate UMI for your single sample run, you need to install UMI-tools (see download instruction here: https://umi-tools.readthedocs.io/en/latest/QUICK_START.html#step-1-install-umi-tools. You can download it by entering system("conda install -c bioconda umi_tools") or system("pip install umi_tools") in R Console in R studio. 
 
+![plot](./readme_figure/console.png)
+
+**Step 4: Run PEMS**
+Now you can run PEMS using the PEMS interface for single sample run, multi-sample run, differential expression analysis and power estimation.
