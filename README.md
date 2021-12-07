@@ -9,6 +9,6 @@ PEMS app have one version for MacOS system and one version for linux system.
 Download RStudio in your computer first. Go to app folder you downloaded and double click ui.R, ui.R will show in your RStudio. Click Runn App, PEMS shinyR interface will show. In the interface, if you click Open in Browser, it will be opened in browser.
 ![plot](./readme_figure/rstudio.png)
 
-![plot](./readme_figure/PEMS-interface.png)
+![plot](./readme_figure/PEMS_interface.png)
 
 
