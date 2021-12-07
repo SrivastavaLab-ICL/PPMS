@@ -1,6 +1,6 @@
 # PEMS
 
-# How to run PEMS with RStudio:** 
+# How to run PEMS with RStudio:
 
 **Step 1: Download app folder of the version you want**
 PEMS app have one version for MacOS system and one version for linux system.
@@ -38,7 +38,7 @@ PEMS app have one version for MacOS system and one version for linux system.
 
 
 
-# How to run PEMS with command line in linux:** 
+# How to run PEMS with command line in linux:
 If you would like to run PEMS use linux command line, go to PEMS_command_version folder and use the .sh file there to run PEMS.
 
 
