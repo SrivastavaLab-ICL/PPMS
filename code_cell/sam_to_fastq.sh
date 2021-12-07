@@ -1,0 +1,5 @@
+perl SAM_to_FASTq_10x.pl 5f1b1696fe9c934c8b836232_1.sam
+perl SAM_to_FASTq_10x.pl 5f1b1696fe9c934c8b836232_2.sam
+perl SAM_to_FASTq_10x.pl 5f1b1696fe9c934c8b836232_3.sam
+perl SAM_to_FASTq_10x.pl 5f1b1696fe9c934c8b836232_4.sam
+

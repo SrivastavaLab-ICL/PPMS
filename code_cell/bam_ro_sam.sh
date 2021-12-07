@@ -1,0 +1,5 @@
+samtools view 5f1b1696fe9c934c8b836232_1.bam > 5f1b1696fe9c934c8b836232_1.sam
+samtools view 5f1b1696fe9c934c8b836232_2.bam > 5f1b1696fe9c934c8b836232_2.sam
+samtools view 5f1b1696fe9c934c8b836232_3.bam > 5f1b1696fe9c934c8b836232_3.sam
+samtools view 5f1b1696fe9c934c8b836232_4.bam > 5f1b1696fe9c934c8b836232_4.sam
+
