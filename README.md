@@ -31,12 +31,12 @@ Now you can run PEMS using the PEMS interface for single sample run, multi-sampl
 # How to run PEMS with R command line:
 
 **Step 1: Download app folder of the version you want**
+
 PEMS app have one version for MacOS system and one version for linux system.
 
 **Step 2: Use R command line**
 
-
-
+Open your terminal and go to the app folder you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PEMS interface is loaded.
 
 
 
