@@ -45,7 +45,9 @@ Open your terminal and go to the app folder you downloaded. Enter R -f ui.R comm
 # How to run PEMS with command line in linux:
 If you would like to run PEMS use linux command line, go to PEMS_command_version folder and use the .sh file there to run PEMS.
 
+![plot](./readme_figure/rcommand.png)
 
+![plot](./readme_figure/http.png)
 
 
 
