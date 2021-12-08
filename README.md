@@ -38,16 +38,14 @@ PEMS app have one version for MacOS system and one version for linux system.
 
 Open your terminal and go to the app folder you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PEMS interface is loaded.
 
+![plot](./readme_figure/rcommand.png)
 
+![plot](./readme_figure/http.png)
 
 
 
 # How to run PEMS with command line in linux:
 If you would like to run PEMS use linux command line, go to PEMS_command_version folder and use the .sh file there to run PEMS.
-
-![plot](./readme_figure/rcommand.png)
-
-![plot](./readme_figure/http.png)
 
 
 
