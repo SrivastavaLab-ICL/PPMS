@@ -32,9 +32,33 @@ Now you can run PEMS using the PEMS interface for single sample run, multi-sampl
 
 **Step 1: Download app folder of the version you want**
 
-PEMS app have one version for MacOS system and one version for linux system.
+PEMS app have one version for MacOS system and one version for linux system.\
 
-**Step 2: Use R command line**
+**Step 2: Download required packages**
+To run PEMS, you need:
+python3
+python2.7
+R >= 3.6.1
+pysam python module (you can install in by conda install pysam or pip install pysam https://pysam.readthedocs.io/en/latest/installation.html)
+
+You need tools: 
+samtools-1.14 (http://www.htslib.org/download/)
+strintie (http://ccb.jhu.edu/software/stringtie/index.shtml)
+UMI_tools (https://umi-tools.readthedocs.io/en/latest/INSTALL.html)
+subread-2.0.3 (http://subread.sourceforge.net)
+or
+You can load the conda environment file pems_env.yml by conda env create -f pems_env.yml  All required tools, python and R have already been installed there.
+
+You also need to install R package by running the code in install_packages.R:
+list.of.packages=c("shinydashboard","shinyjs","shinyBS","shinycssloaders","shiny","shinythemes","limma","edgeR","stringr","biomaRt","ggplot2","gplots","patchwork")
+new.packages=list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+
+
+
+
+**Step 3: Use R command line**
 
 Open your terminal and go to the app folder you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PEMS interface is loaded.
 
