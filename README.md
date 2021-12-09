@@ -59,7 +59,7 @@ subread-2.0.3 (http://subread.sourceforge.net)
 
 **or**
 
-You can load the conda environment file pems_env.yml by conda env create -f pems_env.yml  All required tools, python and R have already been installed there.
+You can load the **conda environment file pems_env.yml under PEMS_command_line folder** by conda env create -f pems_env.yml  All required tools, python and R have already been installed there.
 
 **You also need to install R package by running the code in install_packages.R:**
 
@@ -86,5 +86,28 @@ Open your terminal and go to the app folder you downloaded. Enter R -f ui.R comm
 # How to run PEMS with command line in linux:
 If you would like to run PEMS use linux command line, go to PEMS_command_version folder and use the .sh file there to run PEMS.
 
+**To run PEMS with command line in linux, you also need:**
 
+python3
+
+python2.7
+
+R >= 3.6.1
+
+pysam python module (you can install in by conda install pysam or pip install pysam https://pysam.readthedocs.io/en/latest/installation.html)
+
+
+**You need tools:**
+
+samtools-1.14 (http://www.htslib.org/download/)
+
+strintie (http://ccb.jhu.edu/software/stringtie/index.shtml)
+
+UMI_tools (https://umi-tools.readthedocs.io/en/latest/INSTALL.html)
+
+subread-2.0.3 (http://subread.sourceforge.net)
+
+**or**
+
+You can load the **conda environment file pems_env.yml under PEMS_command_line folder** by conda env create -f pems_env.yml  All required tools, python and R have already been installed there.
 
