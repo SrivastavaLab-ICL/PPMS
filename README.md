@@ -75,7 +75,7 @@ if(length(new.packages)) install.packages(new.packages)
 
 **Step 3: Use R command line**
 
-Open your terminal and go to the app folder you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PEMS interface is loaded.
+Open your terminal and go to the app directory you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PEMS interface is loaded.
 
 ![plot](./readme_figure/rcommand.png)
 
