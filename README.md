@@ -4,7 +4,7 @@
 
 **Step 1: Download app folder of the version you want**
 
-PPMS app have one version for MacOS system and one version for linux system.
+PPMS app have one version for MacOS system and one version for linux system. You can download them in release.
 
 **Step 2: Download RStudio and load PPMS**
 
