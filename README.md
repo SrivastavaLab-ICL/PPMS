@@ -1,14 +1,14 @@
-# PEMS
+# PPMS
 
-# How to run PEMS with RStudio:
+# How to run PPMS with RStudio:
 
 **Step 1: Download app folder of the version you want**
 
-PEMS app have one version for MacOS system and one version for linux system.
+PPMS app have one version for MacOS system and one version for linux system.
 
-**Step 2: Download RStudio and load PEMS**
+**Step 2: Download RStudio and load PPMS**
 
-Download RStudio in your computer first. Go to app folder you downloaded and double click ui.R, ui.R will show in your RStudio. Click Runn App, PEMS shinyR interface will show. In the interface, if you click Open in Browser, it will be opened in browser.
+Download RStudio in your computer first. Go to app folder you downloaded and double click ui.R, ui.R will show in your RStudio. Click Runn App, PPMS shinyR interface will show. In the interface, if you click Open in Browser, it will be opened in browser.
 
 ![plot](./readme_figure/rstudio.png)
 
@@ -22,21 +22,21 @@ If you would like to calculate UMI for your single sample run, you need to insta
 
 ![plot](./readme_figure/console.png)
 
-**Step 4: Run PEMS**
+**Step 4: Run PPMS**
 
-Now you can run PEMS using the PEMS interface for single sample run, multi-sample run, differential expression analysis and power estimation.
+Now you can run PPMS using the PPMS interface for single sample run, multi-sample run, differential expression analysis and power estimation.
 
 
 
-# How to run PEMS with R command line:
+# How to run PPMS with R command line:
 
 **Step 1: Download app folder of the version you want**
 
-PEMS app have one version for MacOS system and one version for linux system.
+PPMS app have one version for MacOS system and one version for linux system.
 
 **Step 2: Download required packages**
 
-**To run PEMS, you need:**
+**To run PPMS, you need:**
 
 python3
 
@@ -75,7 +75,7 @@ if(length(new.packages)) install.packages(new.packages)
 
 **Step 3: Use R command line**
 
-Open your terminal and go to the app directory you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PEMS interface is loaded.
+Open your terminal and go to the app directory you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PPMS interface is loaded.
 
 ![plot](./readme_figure/rcommand.png)
 
@@ -83,10 +83,10 @@ Open your terminal and go to the app directory you downloaded. Enter R -f ui.R c
 
 
 
-# How to run PEMS with command line in linux:
-If you would like to run PEMS use linux command line, go to PEMS_command_version folder and use the .sh file there to run PEMS.
+# How to run PPMS with command line in linux:
+If you would like to run PPMS use linux command line, go to PPMS_command_version folder and use the .sh file there to run PPMS.
 
-**To run PEMS with command line in linux, you also need:**
+**To run PPMS with command line in linux, you also need:**
 
 python3
 
