@@ -4,7 +4,7 @@
 
 **Step 1: Download app folder of the version you want**
 
-PPMS app have one version for MacOS system and one version for linux system. You can download them in release.
+PPMS app have one version for MacOS system and one version for linux system. You can download them in Releases v1.0.
 
 **Step 2: Download RStudio and load PPMS**
 
@@ -32,7 +32,7 @@ Now you can run PPMS using the PPMS interface for single sample run, multi-sampl
 
 **Step 1: Download app folder of the version you want**
 
-PPMS app have one version for MacOS system and one version for linux system.
+PPMS app have one version for MacOS system and one version for linux system. You can download them in Releases v1.0.
 
 **Step 2: Download required packages**
 
