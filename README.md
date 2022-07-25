@@ -4,7 +4,7 @@
 
 **Step 1: Download app folder of the version you want**
 
-PPMS app have one version for MacOS system and one version for linux system. You can download them in Releases v1.0.
+PPMS app have one version for MacOS system and one version for linux system. You can download them in Releases.
 
 **Step 2: Download RStudio and load PPMS**
 
@@ -32,7 +32,7 @@ Now you can run PPMS using the PPMS interface for single sample run, multi-sampl
 
 **Step 1: Download app folder of the version you want**
 
-PPMS app have one version for MacOS system and one version for linux system. You can download them in Releases v1.0.
+PPMS app have one version for MacOS system and one version for linux system. You can download them in Releases.
 
 **Step 2: Download required packages**
 
@@ -110,4 +110,44 @@ subread-2.0.3 (http://subread.sourceforge.net)
 **or**
 
 You can load the **conda environment file ppms_env.yml under conda_env folder** by conda env create -f ppms_env.yml  All required tools, python and R have already been installed there.
+
+
+
+
+
+# How to run Cell Ranger pipline for alignment with R command line in linux system:
+
+
+**Step 1: Download app_cellranger folder in release**
+
+**Step 2: Download required packages**
+
+**Cell Ranger pipline for conducting alignment of sequencing fastq files can only be run in linux system. To use the user interface of Cell Ranger pipline with shinyR interface through linux system, you need:**
+
+python3
+
+R >= 3.6.1
+
+
+**You need to install R package by running the code in install_packages.R to run shinyR:**
+
+list.of.packages=c("shinydashboard","shinyjs","shinyBS","shinycssloaders","shiny","shinythemes")
+new.packages=list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+
+**You also need to download the reference files as instructed:**
+
+refdata-gex-GRCh38-2020-A
+
+refdata-gex-mm10-2020-A
+
+
+
+**Step 3: Use R command line**
+
+Open your terminal and go to the app_cellranger directory you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PPMS interface is loaded.
+
+![plot](./readme_figure/cellranger.png)
+
 
