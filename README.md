@@ -59,7 +59,7 @@ subread-2.0.3 (http://subread.sourceforge.net)
 
 **or**
 
-You can load the **conda environment file pems_env.yml under conda_env folder** by conda env create -f pems_env.yml  All required tools, python and R have already been installed there.
+You can load the **conda environment file ppms_env.yml under conda_env folder** by conda env create -f ppms_env.yml  All required tools, python and R have already been installed there.
 
 **You also need to install R package by running the code in install_packages.R:**
 
@@ -109,5 +109,5 @@ subread-2.0.3 (http://subread.sourceforge.net)
 
 **or**
 
-You can load the **conda environment file pems_env.yml under conda_env folder** by conda env create -f pems_env.yml  All required tools, python and R have already been installed there.
+You can load the **conda environment file ppms_env.yml under conda_env folder** by conda env create -f ppms_env.yml  All required tools, python and R have already been installed there.
 
