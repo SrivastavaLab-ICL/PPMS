@@ -1,6 +1,6 @@
 # PPMS
 
-# How to run PPMS with RStudio:
+# 1. How to run PPMS with RStudio:
 
 **Step 1: Download app folder of the version you want**
 
@@ -28,7 +28,7 @@ Now you can run PPMS using the PPMS interface for single sample run, multi-sampl
 
 
 
-# How to run PPMS with R command line:
+# 2. How to run PPMS with R command line:
 
 **Step 1: Download app folder of the version you want**
 
@@ -83,7 +83,7 @@ Open your terminal and go to the app directory you downloaded. Enter R -f ui.R c
 
 
 
-# How to run PPMS with command line in linux:
+# 3. How to run PPMS with command line in linux:
 If you would like to run PPMS use linux command line, go to PPMS_command_version folder and use the .sh file there to run PPMS.
 
 **To run PPMS with command line in linux, you also need:**
@@ -116,7 +116,7 @@ You can load the **conda environment file ppms_env.yml under conda_env folder** 
 
 
 
-# How to run Cell Ranger pipline for alignment with R command line in linux system:
+# 4. How to run Cell Ranger pipline for alignment with R command line in linux system:
 
 
 **Step 1: Download app_cellranger folder in release**
