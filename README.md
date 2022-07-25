@@ -146,7 +146,7 @@ refdata-gex-mm10-2020-A
 
 **Step 3: Use R command line**
 
-Open your terminal and go to the app_cellranger directory you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the PPMS interface is loaded.
+Open your terminal and go to the app_cellranger directory you downloaded. Enter R -f ui.R command. After running, you will see a http request. Copy the http request to browser, then the interface for Cell Ranger pipline is loaded.
 
 ![plot](./readme_figure/cellranger.png)
 
