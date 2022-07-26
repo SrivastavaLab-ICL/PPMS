@@ -192,15 +192,15 @@ Seurat allows exploration of QC metrics and cell filtering based on user-defined
 
 
 **(2) Cluster cells**
+Principal component analysis (PCA) is firstly conducted on the normalized and scaled data. 
+
+Seurat further applies a graph-based clustering approach to cluster cells based on their PCA scores to overcome the extensive technical noise in any single feature for scRNA-seq data. Each PC essentially representing a 'metafeature' that combines information across a correlated feature set. The top principal components therefore represent a robust compression of the dataset. 
+
+Seurat further provides several non-linear dimensional reduction techniques, such as tSNE and UMAP, to visualize and explore your single cell dataset.
 
 
-
-We calculate mitochondrial QC metrics with the PercentageFeatureSet() function, which calculates the percentage of counts originating from a set of features
-We use the set of all genes starting with MT- as a set of mitochondrial genes
-
-
-Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data. Through expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type), it is able to identify and label individual cells or cell clusters as those of known cell types. Please refer to Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0#citeas) for detailed methods.
-
+**(3) Assign cell type identify to clusters**
+Through expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type), it is able to identify and label individual cells or cell clusters as those of known cell types. Please refer to Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0#citeas) for detailed methods.
 
 
 
