@@ -169,9 +169,9 @@ Use commnad line in linux:
 
 **Step 4: Cell type annotation**
 
-Cell Ranger is able to align sequencing fastq files and generate ouput of count matrix. Output count matrix can be further loaded in Seurat R package (https://satijalab.org/seurat/index.html) for QC, analysis and single-cell RNA-seq data exploration. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements. You 
+Cell Ranger is able to align sequencing fastq files and generate ouput of count matrix. Output count matrix can be further loaded in Seurat R package (https://satijalab.org/seurat/index.html) for QC, analysis and single-cell RNA-seq data exploration. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements. You can further refer to Seurat tutorials (https://satijalab.org/seurat/articles/pbmc3k_tutorial.html).
 
-(1) Quality control and select cells for further analysis
+**(1) Quality control and select cells for further analysis**
 
 Seurat allows exploration of QC metrics and cell filtering based on user-defined criteria. Noramlly, we consider:
 
@@ -180,6 +180,12 @@ Seurat allows exploration of QC metrics and cell filtering based on user-defined
 ***The total number of molecules detected within a cell*** (correlates strongly with unique genes)
 
 ***The percentage of reads that map to the mitochondrial genome*** (Low-quality / dying cells often exhibit extensive mitochondrial contamination)
+
+
+
+
+**(2) Quality control and select cells for further analysis**
+
 
 
 We calculate mitochondrial QC metrics with the PercentageFeatureSet() function, which calculates the percentage of counts originating from a set of features
