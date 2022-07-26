@@ -160,9 +160,31 @@ Open your terminal and go to the app_cellranger directory you downloaded. Enter 
 
 ![plot](./readme_figure/cellranger.png)
 
+
+**OR**
+
+Use commnad line in linux:
+
+
+
 **Step 4: Cell type annotation**
 
-Cell Ranger is able to align sequencing fastq files and generate ouput of count matrix. Output count matrix can be further loaded in Seurat R package (https://satijalab.org/seurat/index.html) for QC, analysis and single-cell RNA-seq data exploration. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements. 
+Cell Ranger is able to align sequencing fastq files and generate ouput of count matrix. Output count matrix can be further loaded in Seurat R package (https://satijalab.org/seurat/index.html) for QC, analysis and single-cell RNA-seq data exploration. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements. You 
+
+(1) Quality control and select cells for further analysis
+
+Seurat allows exploration of QC metrics and cell filtering based on user-defined criteria. Noramlly, you can consider:
+
+*The number of unique genes detected in each cell (Low-quality cells or empty droplets will often have very few genes; Cell doublets or multiplets may exhibit an aberrantly high gene count)
+
+*The total number of molecules detected within a cell (correlates strongly with unique genes)
+
+*The percentage of reads that map to the mitochondrial genome (Low-quality / dying cells often exhibit extensive mitochondrial contamination)
+
+
+We calculate mitochondrial QC metrics with the PercentageFeatureSet() function, which calculates the percentage of counts originating from a set of features
+We use the set of all genes starting with MT- as a set of mitochondrial genes
+
 
 Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data. Through expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type), it is able to identify and label individual cells or cell clusters as those of known cell types. Please refer to Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0#citeas) for detailed methods.
 
