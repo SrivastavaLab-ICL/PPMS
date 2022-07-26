@@ -165,7 +165,14 @@ Open your terminal and go to the app_cellranger directory you downloaded. Enter 
 
 Use commnad line in linux:
 
+export PATH=/path_to_cellranger_folder/cellranger-7.0.0:$PATH
 
+GENOME=/path_to_reference_file/refdata-gex-GRCh38-2020-A
+FQ=/path_to_fastq_folder/fastq_folder
+
+cellranger count --id=$S --fastqs=$FQ --sample=$S --transcriptome=$GENOME --include-introns TRUE
+
+Please refer Cell Ranger website for more details: https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/tutorial_ct
 
 **Step 4: Cell type annotation**
 
