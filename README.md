@@ -176,35 +176,36 @@ Please refer Cell Ranger website for more details: https://support.10xgenomics.c
 
 **Step 4: Cell type annotation**
 
-Cell Ranger is able to align sequencing fastq files and generate ouput of count matrix. Output count matrix can be further loaded in Seurat R package (https://satijalab.org/seurat/index.html) for QC, analysis and single-cell RNA-seq data exploration. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements. You can further refer to Seurat tutorials (https://satijalab.org/seurat/articles/pbmc3k_tutorial.html).
-
-**(1) Quality control and select cells for further analysis**
-
-Seurat allows exploration of QC metrics and cell filtering based on user-defined criteria. Noramlly, we consider:
-
-***The number of unique genes detected in each cell*** (Low-quality cells or empty droplets will often have very few genes; Cell doublets or multiplets may exhibit an aberrantly high gene count)
-
-***The total number of molecules detected within a cell*** (correlates strongly with unique genes)
-
-***The percentage of reads that map to the mitochondrial genome*** (Low-quality / dying cells often exhibit extensive mitochondrial contamination)
+Cell Ranger is a set of analysis pipelines that can be used to map raw fastq files from single-cell data generated from 10X chromium. This workflow will generate feature-barcode matrices that can be loaded in R using the Seurat R package (https://satijalab.org/seurat/index.html). Detailed step-by-step instructions can be found on this website: https://satijalab.org/seurat/articles/pbmc3k_tutorial.html. Before we annotate the cells, we need to do the following steps:
 
 
 
+**(1) The single-cell data is noisy and need to be checked for quality.**
 
-**(2) Cluster cells**
+We recommend excluding cells/nuclei that have: 
 
-Principal component analysis (PCA) is firstly conducted on the normalized and scaled data. 
+(a) a low number of genes mapped as low-quality cells or empty droplets will often have very few genes. 
 
-Seurat further applies a graph-based clustering approach to cluster cells based on their PCA scores to overcome the extensive technical noise in any single feature for scRNA-seq data. Each PC essentially representing a 'metafeature' that combines information across a correlated feature set. The top principal components therefore represent a robust compression of the dataset. 
+(b) a very large number of genes such as cell doublets or multiplets may exhibit an aberrantly high number genes. 
 
-Seurat further provides several non-linear dimensional reduction techniques, such as tSNE and UMAP, to visualize and explore your single cell dataset.
+(c) reads mapping to mitochondrial genome should be less than 5% or at most 10%.
 
 
-**(3) Assign cell type identify to clusters**
 
-Through expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type), it is able to identify and label individual cells or cell clusters as those of known cell types. 
+**(2) The filtered cells need to be clustered in groups with similar expression patterns.**
 
-Please refer to the paper, Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0#citeas) for detailed methods of cell type annotation of single cell data.
+We recommend using the Seurat workflow to group cells (follow the above link). 
+
+Briefly, Seurat performs principal component analysis (PCA) on normalised and scaled data. 
+
+The PCA data is subjected to a graph-based clustering approach to cluster cells. NOTE: the number of clusters in cluster analysis can be altered using the “resolution” parameter. This feature can be used to annotate cells at different levels.
+
+
+**(3) Assign cell type identify to clusters.**
+
+The clustered cells can be annotated to respective cell types through the expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type). 
+
+Users will be able to identify and label individual cells or cell clusters as those of known cell types. For further details on the best practices for cell type annotation, please refer to the article by Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0).
 
 
 
