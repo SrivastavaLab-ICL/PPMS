@@ -163,7 +163,7 @@ Open your terminal and go to the app_cellranger directory you downloaded. Enter 
 
 **OR**
 
-Use commnad line in linux:
+Directly use commnad line in linux:
 
 export PATH=/path_to_cellranger_folder/cellranger-7.0.0:$PATH
 
@@ -191,7 +191,7 @@ Seurat allows exploration of QC metrics and cell filtering based on user-defined
 
 
 
-**(2) Quality control and select cells for further analysis**
+**(2) Cluster cells**
 
 
 
