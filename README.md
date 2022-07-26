@@ -202,7 +202,9 @@ Seurat further provides several non-linear dimensional reduction techniques, suc
 
 **(3) Assign cell type identify to clusters**
 
-Through expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type), it is able to identify and label individual cells or cell clusters as those of known cell types. Please refer to Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0#citeas) for detailed methods.
+Through expression of 'marker genes' (i.e., genes that are specifically expressed in a known cell type), it is able to identify and label individual cells or cell clusters as those of known cell types. 
+
+Please refer to the paper, Clarke et al. (2021) (https://www.nature.com/articles/s41596-021-00534-0#citeas) for detailed methods of cell type annotation of single cell data.
 
 
 
