@@ -192,6 +192,7 @@ Seurat allows exploration of QC metrics and cell filtering based on user-defined
 
 
 **(2) Cluster cells**
+
 Principal component analysis (PCA) is firstly conducted on the normalized and scaled data. 
 
 Seurat further applies a graph-based clustering approach to cluster cells based on their PCA scores to overcome the extensive technical noise in any single feature for scRNA-seq data. Each PC essentially representing a 'metafeature' that combines information across a correlated feature set. The top principal components therefore represent a robust compression of the dataset. 
