@@ -63,11 +63,19 @@ You can load the **conda environment file ppms_env.yml under conda_env folder** 
 
 **You also need to install R package by running the code in install_packages.R:**
 
-list.of.packages=c("shinydashboard","shinyjs","shinyBS","shinycssloaders","shiny","shinythemes","limma","edgeR","stringr","biomaRt","ggplot2","gplots","patchwork")
+list.of.packages=c("shinydashboard","shinyjs","shinyBS","shinycssloaders","shiny","shinythemes","limma","edgeR","stringr","biomaRt","ggplot2","gplots","patchwork","png","plyr")
 
 new.packages=list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 
 if(length(new.packages)) install.packages(new.packages)
+
+
+new.packages=list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+    
+if(length(new.packages)) BiocManager::install(new.packages)
 
 
 
@@ -109,7 +117,7 @@ subread-2.0.3 (http://subread.sourceforge.net)
 
 **or**
 
-You can load the **conda environment file ppms_env.yml under conda_env folder** by conda env create -f ppms_env.yml  All required tools, python and R have already been installed there.
+You can load the **conda environment file ppms_env.yml under conda_env folder** by conda env create -f ppms_env_linux.yml or ppms_env_macos.yml All required tools, python and R have already been installed there.
 
 
 
