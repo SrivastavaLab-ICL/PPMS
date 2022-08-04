@@ -109,7 +109,7 @@ pysam python module (you can install in by conda install pysam or pip install py
 
 samtools-1.14 (http://www.htslib.org/download/)
 
-strintie (http://ccb.jhu.edu/software/stringtie/index.shtml)
+stringtie (http://ccb.jhu.edu/software/stringtie/index.shtml)
 
 UMI_tools (https://umi-tools.readthedocs.io/en/latest/INSTALL.html)
 
